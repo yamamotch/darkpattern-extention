@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "darkpattern Extension",
+    "version": "1.0",
+    "description": "ダークパターン検出拡張機能",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
