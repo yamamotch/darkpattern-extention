@@ -3,13 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="popup.css">
-    <title>My Extension</title>
+    <title>Dark Pattern Detector</title>
 </head>
 
 <body>
-    <h2>My Extension</h2>
-    <button id="checkButton">ページをチェック</button>
+    <main>
+        <h1>Dark Pattern Detector</h1>
+        <p class="description">現在開いているページをチェックします。</p>
+        <button id="checkButton">ページをチェック</button>
+        <p id="status" class="status" aria-live="polite">チェック待ち</p>
+        <section id="results" aria-live="polite">
+        </section>
+    </main>
     <script src="popup.js"></script>
 </body>
 

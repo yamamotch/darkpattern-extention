@@ -1,11 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    width: 220px;
-    padding: 15px;
-    font-family: sans-serif;
+    width: 350px;
+    margin: 0;
+    padding: 16px;
+    color: #20242b;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #f7f8fa;
+}
+
+h1 {
+    margin: 0 0 6px;
+    font-size: 18px;
+}
+
+.description {
+    margin: 0 0 14px;
+    color: #606875;
+    font-size: 12px;
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 11px;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    background: #263b59;
+    font-size: 14px;
+    font-weight: 700;
     cursor: pointer;
+}
+
+button:disabled {
+    opacity: .55;
+    cursor: wait;
+}
+
+.status {
+    min-height: 18px;
+    margin: 11px 0 8px;
+    font-size: 12px;
+    color: #596273;
+}
+
+#results {
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.empty {
+    padding: 14px;
+    border-radius: 7px;
+    background: white;
+    color: #707783;
+    font-size: 12px;
+}
+
+.result {
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #e0e4ea;
+    border-left: 4px solid #d58a24;
+    border-radius: 6px;
+    background: white;
+}
+
+.result h2 {
+    margin: 0 0 5px;
+    font-size: 13px;
+}
+
+.result p {
+    margin: 0;
+    color: #555e6b;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+.result .evidence {
+    margin-top: 5px;
+    color: #252b34;
+}
+
+.count {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.note {
+    margin: 12px 0 0;
+    color: #777f8b;
+    font-size: 10px;
+    line-height: 1.5;
 }
